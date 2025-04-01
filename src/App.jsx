@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar"; // Example component
 import Home from "./pages/Home"; // Example Page
 import Login from "./pages/Login"; // Example Page
 
-
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -16,8 +15,6 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
-         
-          
           {/* Add other routes here */}
         </Routes>
       </Router>
