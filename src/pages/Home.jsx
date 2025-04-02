@@ -6,7 +6,7 @@ const Home = () => {
   const [stations, setStations] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/stations") // Fetch radio stations from backend
+    axios.get("http://localhost:10000/api/stations") // Fetch radio stations from backend
       .then((res) => setStations(res.data))
       .catch((err) => console.error("Error fetching stations:", err));
   }, []);
